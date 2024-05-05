@@ -1,3 +1,4 @@
+import { SharedUi } from '@practice-ai/shared-ui';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -33,6 +34,7 @@ const Home: React.FC<HomeProps> = ({ posts }) => {
           </div>
         ))}
       </div>
+      <SharedUi />
     </div>
   );
 };
