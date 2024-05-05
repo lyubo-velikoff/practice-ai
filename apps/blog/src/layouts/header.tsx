@@ -3,21 +3,35 @@ import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
-    <header className="p-4 text-white bg-blue-600"> {/* Background color and padding */}
-      <div className="container flex items-center justify-between mx-auto">
-        <h1 className="text-2xl font-bold">
-          <Link to="/" className="hover:text-blue-300">My Blog</Link> {/* Home link */}
-        </h1>
-        <nav>
-          <ul className="flex space-x-4"> {/* Navigation links */}
-            <li>
-              <Link to="/" className="hover:text-blue-300">Home</Link>
-            </li>
-            <li>
-              <Link to="/about" className="hover:text-blue-300">About</Link>
-            </li>
-          </ul>
+    <header className="bg-white shadow-sm">
+      <div className="container flex items-center justify-between px-4 py-4 mx-auto">        
+        <Link to="/" className="flex items-center hover:text-blue-300">
+          <img
+            src="https://placehold.co/150x50"
+            alt="Company Logo"
+            className="h-8 mr-3"
+          />
+          <span className="text-xl font-semibold">CompanyName</span>
+        </Link>
+
+        <nav className="hidden space-x-4 md:flex">
+          <Link
+            to="/"
+            className="font-semibold text-gray-900 transition-colors hover:text-gray-700"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="font-semibold text-gray-900 transition-colors hover:text-gray-700"
+          >
+            About
+          </Link>
         </nav>
+
+        <button className="text-gray-900 md:hidden focus:outline-none">
+          <i className="fas fa-bars"></i>
+        </button>
       </div>
     </header>
   );
