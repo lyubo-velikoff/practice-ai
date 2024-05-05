@@ -52,7 +52,6 @@ const Home: React.FC<HomeProps> = ({ posts }) => {
         ))}
       </div>
       <SharedUi />
-      <div>Testing CI</div>
     </div>
   );
 };
