@@ -1,10 +1,13 @@
-import { render } from '@testing-library/react';
-
+// __tests__/App.test.tsx
+import { render, screen } from '@testing-library/react';
 import App from './app';
 
-describe('App', () => {
-  it('should render successfully', () => {
-    const { baseElement } = render(<App />);
-    expect(baseElement).toBeTruthy();
-  });
+test('renders App without crashing', () => {
+  render(<App />);
+
+  // Check if the home link exists
+  screen.getByText("My Blog");
+
+  // Check if the About link exists
+  screen.getByText(/about/i);
 });
