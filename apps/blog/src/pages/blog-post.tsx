@@ -51,7 +51,7 @@ const BlogPostDetail: React.FC = () => {
         <Link to="/" className="hover:underline">
           Home
         </Link>{' '}
-        / {post.title}
+        / <span className='font-bold'>{post.title}</span>
       </nav>
       {/* Image (use placeholder if cover image is not available) */}
       <img
