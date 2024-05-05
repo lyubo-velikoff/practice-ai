@@ -6,7 +6,8 @@
   "private": true,
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
     "@nx/cypress": "18.3.4",
