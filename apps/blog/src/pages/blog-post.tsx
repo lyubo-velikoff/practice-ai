@@ -74,7 +74,7 @@ const BlogPostDetail: React.FC = () => {
         href={post.canonical_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block mt-4 text-blue-600 hover:text-blue-800"
+        className="inline-block mt-4 font-semibold text-gray-900 transition-colors hover:text-gray-700 hover:underline"
       >
         Read the full article
       </a>

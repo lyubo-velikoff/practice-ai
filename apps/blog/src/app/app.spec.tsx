@@ -6,7 +6,7 @@ test('renders App without crashing', () => {
   render(<App />);
 
   // Check if the home link exists
-  screen.getByText('My Blog');
+  screen.getByText(/home/i);
 
   // Check if the About link exists
   screen.getByText(/about/i);
