@@ -27,7 +27,6 @@ const Home: React.FC<HomeProps> = ({ posts }) => {
             key={post.id}
             className="p-4 transition border rounded-lg hover:shadow-lg"
           >
-            
             {/* Card style for each post */}
             <h2 className="text-xl font-semibold">
               <Link
