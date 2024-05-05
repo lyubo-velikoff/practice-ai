@@ -58,8 +58,8 @@ test('renders Home with blog posts', () => {
   );
 
   // Check if the first post is rendered with the correct title
-  screen.getByText('First Post')
+  screen.getByText('First Post');
 
   // Check if the first post description is rendered
-  screen.getByText('This is the first post')
+  screen.getByText('This is the first post');
 });
