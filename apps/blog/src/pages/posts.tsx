@@ -2,14 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPost } from '../types';
 import { PLACEHOLDER_IMAGE } from '../constants/constants';
+import Filters, { FiltersProps } from '../components/filters';
 
-interface PostsProps {
+interface PostsProps extends FiltersProps {
   posts: BlogPost[];
 }
 
-const Posts: React.FC<PostsProps> = ({ posts }) => {
+const Posts: React.FC<PostsProps> = ({ posts, ...rest }) => {
   return (
     <div className="container p-4 mx-auto">
+      <Filters {...rest} />
       <h1 className="mb-6 text-3xl font-bold">Latest Blog Posts</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
