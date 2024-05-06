@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { BlogPost } from '../types';
 import { PLACEHOLDER_IMAGE } from '../constants/constants';
 
-interface HomeProps {
+interface PostsProps {
   posts: BlogPost[];
 }
 
-const Home: React.FC<HomeProps> = ({ posts }) => {
+const Posts: React.FC<PostsProps> = ({ posts }) => {
   return (
     <div className="container p-4 mx-auto">
       <h1 className="mb-6 text-3xl font-bold">Latest Blog Posts</h1>
@@ -43,4 +43,4 @@ const Home: React.FC<HomeProps> = ({ posts }) => {
   );
 };
 
-export default Home;
+export default Posts;

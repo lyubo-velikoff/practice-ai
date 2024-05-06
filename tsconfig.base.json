@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@practice-ai/db": ["db/src/index.ts"],
       "@practice-ai/shared-ui": ["libs/shared/ui/src/index.ts"]
     }
   },
