@@ -9,7 +9,7 @@ const PostsController: React.FC = () => {
   const [tag, setTag] = useState('');
   const [username, setUsername] = useState('');
   const [minReactions, setMinReactions] = useState(0);
-
+  console.log('minReactions', minReactions);
   const deferredTag = useDeferredValue(tag);
   const deferredUsername = useDeferredValue(username);
   const deferredMinReactions = useDeferredValue(minReactions);
@@ -43,8 +43,9 @@ const PostsController: React.FC = () => {
         const userMatch = deferredUsername
           ? post.user.username === username
           : true;
-        const reactionsMatch =
-          post.public_reactions_count >= deferredMinReactions;
+        const reactionsMatch = Number.isNaN(deferredMinReactions)
+          ? true
+          : post.public_reactions_count >= deferredMinReactions;
         return tagMatch && userMatch && reactionsMatch;
       })
     : [];
