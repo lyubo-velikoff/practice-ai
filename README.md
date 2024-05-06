@@ -2,15 +2,17 @@
 
 Demo [https://practice-ai.vercel.app/](https://practice-ai.vercel.app/)
 
-## Integrate with editors
+## Pre-requisites
 
-Enhance your Nx experience by installing [Nx Console](https://nx.dev/nx-console) for your favorite editor. Nx Console
-provides an interactive UI to view your projects, run tasks, generate code, and more! Available for VSCode, IntelliJ and
-comes with a LSP for Vim users.
+- `NX_CLOUD_ACCESS_TOKEN` env var. You can also create nx-cloud.env file and store it in there
 
 ## Start the application
 
 Run `npx nx serve blog` to start the development server. Happy coding!
+
+## Tools used
+
+- [SWR](https://swr.vercel.app/) `stale-while-revalidate` Developed by Vercel is another popular data-fetching library with automatic caching, background refetching, and a simple API
 
 ## Build for production
 
@@ -38,7 +40,7 @@ npx nx run-many -t <target1> <target2> -p <proj1> <proj2>
 
 Targets can be defined in the `package.json` or `projects.json`. Learn more [in the docs](https://nx.dev/features/run-tasks).
 
-## Set up CI!
+## Set up CI
 
 Nx comes with local caching already built-in (check your `nx.json`). On CI you might want to go a step further.
 
@@ -52,9 +54,3 @@ Run `npx nx graph` to show the graph of the workspace.
 It will show tasks that you can run with Nx.
 
 - [Learn more about Exploring the Project Graph](https://nx.dev/core-features/explore-graph)
-
-## Connect with us!
-
-- [Join the community](https://nx.dev/community)
-- [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
-- [Follow us on Twitter](https://twitter.com/nxdevtools)
