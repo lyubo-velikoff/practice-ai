@@ -22,7 +22,7 @@ const Filters: React.FC<FiltersProps> = ({
   setMinReactions,
 }) => {
   return (
-    <div className="flex items-center justify-center gap-4 mb-4">
+    <div className="items-center justify-center gap-4 mb-4 md:flex">
       <div>
         <label className="block text-sm font-medium">Tag:</label>
         <input
