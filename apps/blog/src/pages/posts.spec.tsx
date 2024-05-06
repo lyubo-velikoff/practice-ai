@@ -1,8 +1,8 @@
 // __tests__/Home.test.tsx
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Home from './home';
 import { BlogPost } from '../types';
+import Posts from './posts';
 
 const mockPosts: BlogPost[] = [
   {
@@ -53,7 +53,7 @@ const mockPosts: BlogPost[] = [
 test('renders Home with blog posts', () => {
   render(
     <Router>
-      <Home posts={mockPosts} />
+      <Posts posts={mockPosts} />
     </Router>
   );
 
