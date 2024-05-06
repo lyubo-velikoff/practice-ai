@@ -15,16 +15,10 @@ const Header: React.FC = () => {
         </Link>
 
         <nav className="hidden space-x-4 md:flex">
-          <Link
-            to="/"
-            className="font-semibold text-gray-900 transition-colors hover:text-gray-700"
-          >
+          <Link to="/" className="copy">
             Home
           </Link>
-          <Link
-            to="/about"
-            className="font-semibold text-gray-900 transition-colors hover:text-gray-700"
-          >
+          <Link to="/about" className="copy">
             About
           </Link>
         </nav>
