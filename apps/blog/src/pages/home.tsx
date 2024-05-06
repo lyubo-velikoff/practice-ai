@@ -31,6 +31,8 @@ const Home: React.FC<HomeProps> = ({ posts }) => {
               {post.readable_publish_date} by {post.user.name}
             </p>
 
+            <p className="mt-2">{post.description}</p>
+
             <Link to={`/post/${post.id}`} className="inline-block mt-4 copy">
               Read More
             </Link>
