@@ -14,8 +14,8 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<PostsController />} />
           <Route path="/about" element={<About />} />
-          <Route path="/post/:id" element={<BlogPostContainer />} />{' '}
-          <Route path="*" element={<NotFound />} />{' '}
+          <Route path="/post/:id" element={<BlogPostContainer />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
